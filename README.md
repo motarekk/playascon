@@ -6,11 +6,16 @@
 * #### It has been selected as the primary choice for lightweight authenticated encryption in the final portfolio of the CAESAR competition (2014–2019).
 * #### It has been selected by the US National Institute of Standards and Technology (NIST) for future standardization of the lightweight cryptography (Feb, 2023).<br><br>
 
+
+<img width="650" alt="ascon-family" src="https://github.com/motarekk/playascon/assets/104282801/0b0cf288-fd7c-4f14-9369-356168141dde">
+
+
 ### Some features I like about ASCON
-* #### It processes data like a sponge (absorbing/squeezing), hence its name is Ascon (lookup the ascon canal system).
+* #### It processes data like a sponge (absorbing/squeezing), hence its name is Ascon (lookup the ascon canal system). 
 * #### One-pass and inverse free.
 * #### No need for key scheduling.
 * #### No need for using lookup tables for Sbox in the implementation.<br><br>
+<img width="250" alt="ascon-canal-system" src="https://github.com/motarekk/playascon/assets/104282801/c11047eb-f4de-44e1-b5ae-2392a4fe7c2a">
 
 ### Important links:
 [1] Ascon official site:
