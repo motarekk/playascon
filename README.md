@@ -7,7 +7,7 @@
 * #### It has been selected by the US National Institute of Standards and Technology (NIST) for future standardization of the lightweight cryptography (Feb, 2023).<br><br>
 
 
-<img width="650" alt="ascon-family" src="https://github.com/motarekk/playascon/assets/104282801/0b0cf288-fd7c-4f14-9369-356168141dde">
+<img width="650" alt="ascon-family" src="https://github.com/motarekk/playascon/assets/104282801/b54cb4d7-78bd-47c3-b51c-db8fc48c48ba">
 
 
 ### Some features I like about ASCON
