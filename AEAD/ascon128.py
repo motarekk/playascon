@@ -14,6 +14,7 @@
 # Ascon submission paper: https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/ascon-spec-final.pdf
 # original pyascon implementation: https://github.com/meichlseder/pyascon
 # this file is meant to be a quick hands on Ascon-128 encryption/decryption
+# inspired by original python implementation: https://github.com/meichlseder/pyascon
 
 # === Ascon core steps === #
 # initialize > associated data > plaintext/ciphertext > finalization
