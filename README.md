@@ -15,7 +15,7 @@
 * #### One-pass and inverse free.
 * #### No need for key scheduling.
 * #### No need for using lookup tables for Sbox in the implementation.<br><br>
-<img width="250" alt="ascon-canal-system" src="https://github.com/motarekk/playascon/assets/104282801/c11047eb-f4de-44e1-b5ae-2392a4fe7c2a"><br>
+<img width="250" alt="ascon-canal-system" src="https://github.com/motarekk/playascon/assets/104282801/c11047eb-f4de-44e1-b5ae-2392a4fe7c2a"><br><br>
 
 ### Documented the python implementation of Ascon-128:
 #### Go to https://github.com/motarekk/playascon/blob/main/AEAD/ascon128.py
@@ -24,7 +24,7 @@
 
 https://github.com/motarekk/playascon/assets/104282801/4f991d92-5d6b-4835-b5a5-f562d5ad0b98
 
-
+<br>
 
 ### Important links:
 [1] Ascon official site:
