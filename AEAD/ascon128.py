@@ -9,7 +9,7 @@
 
 # === some notes about this file === #
 # Ascon family includes AEAD, hash, and mac algorithms. This file is an implementation for AEAD only
-# Also, Ascon has 3 AEAD variants, this file is only for Ascon-128 variant
+# Also, Ascon has 3 AEAD variants, this file is only for Ascon-128 variant, since it's the primary variant of Ascon
 # AEAD = Authenticated Encryption with Associated Data
 # Ascon submission paper: https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/ascon-spec-final.pdf
 # original pyascon implementation: https://github.com/meichlseder/pyascon
