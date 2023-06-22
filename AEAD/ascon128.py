@@ -295,7 +295,7 @@ def get_random_bytes(num):
 
 def hex_print(data):
     for text, val in data:
-        print("{text}:{align}0x{val}".format(text=text, val=val, align=(19-len(text))*" "))
+        print("{text}:{align}0x{val}".format(text=text, val=val.hex(), align=(19-len(text))*" "))
 
 ### ============================================================================== ###
 # === demo aead === #
@@ -316,10 +316,10 @@ def demo_aead():
     print(demo)
     print(f"associated data:    {associateddata}")
     print(f"plaintext:          {plaintext}")
-    hex_print([("key", key.hex()),
-                ("nonce", nonce.hex()),
-                ("ciphertext", ciphertext[:-16].hex()),
-                ("tag", tag.hex()),
+    hex_print([("key", key),
+                ("nonce", nonce),
+                ("ciphertext", ciphertext[:-16]),
+                ("tag", tag),
                 ])
     print(f"received plaintext: {receivedplaintext}")
 
@@ -327,4 +327,3 @@ def demo_aead():
 # === demo test === #
 if __name__ == "__main__":
     demo_aead()
-    
