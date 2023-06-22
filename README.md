@@ -1,6 +1,9 @@
 # playascon
 ### Understanding, implementing, documenting and playing with ASCON cipher, the state of the art of Lightweight Cryptography (LWC).<br><br>
 
+<img width="450" alt="ascon-family" src="https://github.com/motarekk/playascon/assets/104282801/8cce10d2-c512-4568-b6d5-e872a8648131">
+
+
 ### What is ASCON?
 * ####  Ascon is a lightweight cryptographic family that includes Authenticated Encryption with Associated Data (AEAD), Hashing, and Message Authentication Code (MAC) algorithms.
 * #### It has been selected as the primary choice for lightweight authenticated encryption in the final portfolio of the CAESAR competition (2014–2019).
