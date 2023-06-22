@@ -1,7 +1,8 @@
 # playascon
 ### Understanding, implementing, documenting and playing with ASCON cipher, the state of the art of Lightweight Cryptography (LWC).<br><br>
 
-<img width="450" alt="ascon-family" src="https://github.com/motarekk/playascon/assets/104282801/8cce10d2-c512-4568-b6d5-e872a8648131">
+<img width="450" alt="ascon-family" src="https://github.com/motarekk/playascon/assets/104282801/bc4b90fb-a936-4aa3-aa37-5a4c97a87e57">
+
 
 
 ### What is ASCON?
