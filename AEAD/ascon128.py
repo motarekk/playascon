@@ -2,8 +2,11 @@
 
 """
 # === file description === #
-# explanatory-documented implementation of Ascon-128 AEAD encryption & decryption
-# === By: Mohamed Tarek, aka. motarek === #
+# explanatory-documented implementation of Ascon-128 AEAD encryption & decryption for educational purpose
+
+# === Contact === #
+# Mohamed Tarek, aka. motarek
+# Email: 0xmohamed.tarek@gmail.com
 # LinkedIn: https://www.linkedin.com/in/mohamed-tarek-159a821ba/
 # YouTube (livestreams): https://www.youtube.com/@motarekk/streams
 
