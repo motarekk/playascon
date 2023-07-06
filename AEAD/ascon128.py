@@ -205,7 +205,7 @@ def ascon_process_ciphertext(S, b, rate, ciphertext):
     plaintext += (c_last ^ S[0]).to_bytes(8, 'big')[:c_lastlen]
 
     # rate = S[0] ^ (plaintext || 1 || 0s)
-    padded_plaintext = int((plaintext[:c_lastlen] + c_padding).hex(), 16)
+    padded_plaintext = int((plaintext[blocks:] + c_padding).hex(), 16)
     S[0] ^= padded_plaintext
 
     return plaintext
