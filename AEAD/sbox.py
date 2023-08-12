@@ -1,5 +1,5 @@
 # understanding ASCON's Sbox by an example
-# implementing ASCON substitution layer using both sbox lookup table (LUT) and bitsliced form and comparing the results which must be the same
+# implementing ASCON substitution layer using both sbox lookup table (LUT) and logic gate-based forms and comparing the results which must be the same
 # see Sbox bitsliced form instructions at: https://ascon.iaik.tugraz.at/images/sbox_instructions.c
 
 # === helper functions === #
@@ -94,7 +94,7 @@ def sbox(S_columns):
     
     return output
 
-# performing substitution layer using bitsliced form
+# performing substitution layer using logic gate-based form
 # referece: https://ascon.iaik.tugraz.at/images/sbox_instructions.c
 def sbox_simplified(state):
     # convert S from binary to decimal
@@ -117,7 +117,7 @@ def sbox_simplified(state):
 
     return state
 
-# proof that sbox LUT result == bitsliced sboxing result
+# proof that sbox LUT result == logic gate-based sbox result
 state_after_sbox = state_to_dec(in_raws(state_to_bin(sbox(S_columns))))
 state_after_simplified_sbox = sbox_simplified(S_raws)
 
