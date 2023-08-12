@@ -256,25 +256,8 @@ def ascon_permutation(S, rounds):
         S[1] ^= S[0]
         S[0] ^= S[4]
         S[3] ^= S[2]
-        S[2] ^= 0XFFFFFFFFFFFFFFFF # binary signed 2's complement of ~[S2]
+        S[2] ^= 0XFFFFFFFFFFFFFFFF # XORing with 1s = NOT operation
         
-        """
-        follow this to understand the last line:
-        ~ is bitwise NOR operator --> changes sign and substracts one
-        ex: if S[2] = 29, then ~S[2] = -30
-        we can't deal with negative numbers here, so we take its 2's complement,
-        which is done by this operation:
-        S[2] ^= 0XFFFFFFFFFFFFFFFF
-
-        Now, notice these numbers carefully:
-        ~S[2] = -30 = - 0000000000000000000000000000000000000000000000000000000000011101
-        = S[2] ^= 0XFFFFFFFFFFFFFFFF
-                    =   1111111111111111111111111111111111111111111111111111111111100010
-        didn't get it yet? do this:
-        1- study the binary signed 2's complement topic
-        2- catch me in my YT stream and ask
-        """
-
         # --- step 3: linear diffusion layer --- #
         S[0] ^= rotr(S[0], 19) ^ rotr(S[0], 28)
         S[1] ^= rotr(S[1], 61) ^ rotr(S[1], 39)
