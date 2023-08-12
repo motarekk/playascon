@@ -3,7 +3,7 @@
 # see Sbox bitsliced form instructions at: https://ascon.iaik.tugraz.at/images/sbox_instructions.c
 
 # === helper functions === #
-# 64-bits padding
+# zero padding
 def pad(x, y):
     while len(x) < y:
         x = '0' + x
@@ -117,7 +117,7 @@ def sbox_simplified(state):
 
     return state
 
-# proof that sbox LUT reslut == bitsliced sboxing result
+# proof that sbox LUT result == bitsliced sboxing result
 state_after_sbox = state_to_dec(in_raws(state_to_bin(sbox(S_columns))))
 state_after_simplified_sbox = sbox_simplified(S_raws)
 
